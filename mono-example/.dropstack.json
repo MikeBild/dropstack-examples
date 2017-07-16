@@ -1,6 +1,7 @@
 {
   "variables": [],
-  "instances": 0,
-  "alias": "",
-  "type": ""
+  "instances": 1,
+  "type": "mono",
+  "name": "wsalhlsh",
+  "serviceUrl": "wsalhlsh.cloud.dropstack.run"
 }

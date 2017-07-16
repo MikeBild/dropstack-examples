@@ -64,6 +64,16 @@ namespace helloservice
 			    Console.WriteLine("Advanced personalized greeting requested for {0}", name);
 			    return HelloLogic.Greet_visitor(name);
             };
+
+            Get["/provokeexception"] = _ => {
+                throw new ApplicationException("Bye, bye from the hello service...");
+            };
+
+            Get["/provokeexit"] = _ => {
+                Console.WriteLine("Exiting service upon request, but with a non-zero exit code...");
+                Environment.Exit(-99);
+                return ""; // will never be reached
+            };
         }
     }
 
