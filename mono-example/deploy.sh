@@ -1,2 +1,2 @@
 #!/bin/sh
-dropstack deploy -v build=./scripts/build.sh -v start=./scripts/start.sh
+dropstack deploy -v build=./ds-build.sh -v test=./ds-test.sh -v start=./ds-start.sh

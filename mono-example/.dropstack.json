@@ -1,7 +1,12 @@
 {
-  "variables": "build=./scripts/build.sh,start=./scripts/start.sh",
+  "variables": "build=./ds-build.sh,test=./ds-test.sh,start=./ds-start.sh",
   "instances": 1,
   "type": "mono",
   "name": "wsalhlsh",
-  "serviceUrl": "wsalhlsh.cloud.dropstack.run"
+  "serviceUrl": "wsalhlsh.cloud.dropstack.run",
+  "excludes": [
+    "bin/*",
+    "obj/*",
+    "packages/*"
+  ]
 }

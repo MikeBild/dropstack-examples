@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<test-run id="2" testcasecount="2" result="Failed" total="2" passed="1" failed="1" inconclusive="0" skipped="0" asserts="7" engine-version="3.7.0.0" clr-version="4.0.30319.42000" start-time="2017-07-18 16:05:05Z" end-time="2017-07-18 16:05:06Z" duration="0.927923">
+  <command-line><![CDATA[/Users/ralfw/Projects/dropstack-examples.github/mono-example/hello-service/packages/NUnit.ConsoleRunner.3.7.0/tools/nunit3-console.exe bin/hello-service.exe]]></command-line>
+  <test-suite type="Assembly" id="0-1003" name="hello-service.exe" fullname="/Users/ralfw/Projects/dropstack-examples.github/mono-example/bin/hello-service.exe" runstate="Runnable" testcasecount="2" result="Failed" site="Child" start-time="2017-07-18 16:05:06Z" end-time="2017-07-18 16:05:06Z" duration="0.066238" total="2" passed="1" failed="1" warnings="0" inconclusive="0" skipped="0" asserts="7">
+    <environment framework-version="3.7.1.0" clr-version="4.0.30319.42000" os-version="Unix 16.5.0.0" platform="Unix" cwd="/Users/ralfw/Projects/dropstack-examples.github/mono-example/bin" machine-name="Hereafter-2.local" user="ralfw" user-domain="Hereafter-2.local" culture="de-DE" uiculture="de-DE" os-architecture="x86" />
+    <settings>
+      <setting name="DisposeRunners" value="True" />
+      <setting name="WorkDirectory" value="/Users/ralfw/Projects/dropstack-examples.github/mono-example" />
+      <setting name="ImageRuntimeVersion" value="4.0.30319" />
+      <setting name="ImageTargetFrameworkName" value=".NETFramework,Version=v4.6.1" />
+      <setting name="ImageRequiresX86" value="True" />
+      <setting name="RunAsX86" value="True" />
+      <setting name="ImageRequiresDefaultAppDomainAssemblyResolver" value="False" />
+      <setting name="NumberOfTestWorkers" value="4" />
+    </settings>
+    <properties>
+      <property name="_PID" value="57458" />
+      <property name="_APPDOMAIN" value="domain-" />
+    </properties>
+    <failure>
+      <message><![CDATA[One or more child tests had errors]]></message>
+    </failure>
+    <test-suite type="TestSuite" id="0-1004" name="helloservice" fullname="helloservice" runstate="Runnable" testcasecount="2" result="Failed" site="Child" start-time="2017-07-18 16:05:06Z" end-time="2017-07-18 16:05:06Z" duration="0.050978" total="2" passed="1" failed="1" warnings="0" inconclusive="0" skipped="0" asserts="7">
+      <failure>
+        <message><![CDATA[One or more child tests had errors]]></message>
+      </failure>
+      <test-suite type="TestFixture" id="0-1000" name="test_HelloLogic" fullname="helloservice.test_HelloLogic" classname="helloservice.test_HelloLogic" runstate="Runnable" testcasecount="2" result="Failed" site="Child" start-time="2017-07-18 16:05:06Z" end-time="2017-07-18 16:05:06Z" duration="0.047665" total="2" passed="1" failed="1" warnings="0" inconclusive="0" skipped="0" asserts="7">
+        <failure>
+          <message><![CDATA[One or more child tests had errors]]></message>
+        </failure>
+        <test-case id="0-1001" name="Greet_person" fullname="helloservice.test_HelloLogic.Greet_person" methodname="Greet_person" classname="helloservice.test_HelloLogic" runstate="Runnable" seed="921743540" result="Failed" start-time="2017-07-18 16:05:06Z" end-time="2017-07-18 16:05:06Z" duration="0.026154" asserts="1">
+          <failure>
+            <message><![CDATA[  Expected string length 14 but was 13. Strings differ at index 13.
+  Expected: "Hello, Bruce!x"
+  But was:  "Hello, Bruce!"
+  ------------------------^
+]]></message>
+            <stack-trace><![CDATA[at helloservice.test_HelloLogic.Greet_person () [0x0000b] in <8823c8b48a4345fab665d88fdf232e1b>:0
+]]></stack-trace>
+          </failure>
+          <assertions>
+            <assertion result="Failed">
+              <message><![CDATA[  Expected string length 14 but was 13. Strings differ at index 13.
+  Expected: "Hello, Bruce!x"
+  But was:  "Hello, Bruce!"
+  ------------------------^
+]]></message>
+              <stack-trace><![CDATA[at helloservice.test_HelloLogic.Greet_person () [0x0000b] in <8823c8b48a4345fab665d88fdf232e1b>:0
+]]></stack-trace>
+            </assertion>
+          </assertions>
+        </test-case>
+        <test-case id="0-1002" name="Greet_visitor" fullname="helloservice.test_HelloLogic.Greet_visitor" methodname="Greet_visitor" classname="helloservice.test_HelloLogic" runstate="Runnable" seed="67776705" result="Passed" start-time="2017-07-18 16:05:06Z" end-time="2017-07-18 16:05:06Z" duration="0.007095" asserts="6" />
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>
