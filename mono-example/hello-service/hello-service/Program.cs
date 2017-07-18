@@ -9,6 +9,7 @@ using Nancy;
 
 using NUnit.Framework;
 using System.Linq;
+using System.Diagnostics;
 
 namespace helloservice
 {
@@ -73,6 +74,15 @@ namespace helloservice
                 Console.WriteLine("Exiting service upon request, but with a non-zero exit code...");
                 Environment.Exit(-99);
                 return ""; // will never be reached
+            };
+
+            Get["/version"] = _ =>
+            {
+                Console.WriteLine("Version inquired");
+
+                var assembly = System.Reflection.Assembly.GetExecutingAssembly();
+                var fvi = FileVersionInfo.GetVersionInfo(assembly.Location);
+                return $"Version: {fvi.FileVersion}";
             };
         }
     }
