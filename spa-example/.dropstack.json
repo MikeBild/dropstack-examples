@@ -1,5 +1,5 @@
 {
-  "variables": [],
+  "variables": "",
   "instances": 1,
   "alias": "spa-example.cloud.dropstack.run",
   "type": "spa",

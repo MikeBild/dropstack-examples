@@ -2,7 +2,7 @@
 
 ## Deploy via [https://dropstack.run](https://dropstack.run)
 
-```
+```bash
 dropstack login // only once per local user
 
 dropstack deploy // for each new version of the service
