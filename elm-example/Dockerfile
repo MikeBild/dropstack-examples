@@ -12,4 +12,4 @@ RUN apt-get update && \
     yarn global add elm
 ADD . /app
 WORKDIR /app
-RUN elm make --yes Main.elm --output index.html
+RUN elm make --yes Main.elm --output elm.js
